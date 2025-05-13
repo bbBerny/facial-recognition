@@ -1,0 +1,123 @@
+:root {
+  --primary: #4A90E2;
+  --text: #333;
+  --bg: #fff;
+  --muted: #666;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Navbar fija */
+.navbar {
+  background: var(--bg);
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.nav-right .btn {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--primary);
+  transition: background 0.2s, color 0.2s;
+}
+.nav-right .btn:hover {
+  background: var(--primary);
+  color: #fff;
+}
+.nav-right .btn.primary {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Hero */
+.hero {
+  background: #F0F4F8;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+
+/* Markdown content */
+.content h2 {
+  margin-top: 2rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid var(--primary);
+}
+.content p,
+.content li {
+  margin-bottom: 1rem;
+}
+.content code {
+  background: #eee;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+.content pre {
+  background: #eee;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #eee;
+  margin-top: 4rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-right .btn {
+    display: block;
+    margin: 0.5rem 0;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
