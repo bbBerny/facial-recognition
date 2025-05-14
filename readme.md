@@ -1,80 +1,61 @@
-# Reconocimiento Facial
+# Facial Recognition
 
-Una aplicación web minimalista para reconocimiento facial desarrollada con Django.
+A facial recognition app with capabilities of identifying people and sending alerts 
 
-## 📋 Descripción
+## Description
 
-Este proyecto permite:
+* Show readme.md information
+* Register and login of users
+* Very simple and easy to use interface
 
-* Mostrar información del proyecto (README renderizado en la página).
-* Registro e inicio de sesión de usuarios.
-* Interfaz muy simple, limpia y responsive.
+## Characteristics
 
-## 🚀 Características
+* **Auth**: Register and login with `django.contrib.auth`.
+* **Markdown**: Loading and rendering of `README.md` on HTML.
+* **Responsive**: Adaptive to mobile displays with CSS simple.
 
-* **Autenticación**: Registro e inicio de sesión con `django.contrib.auth`.
-* **Markdown**: Carga y renderizado de `README.md` en HTML.
-* **Responsive**: Adaptación a dispositivos móviles con CSS simple.
+## Install instructions
 
-## 🛠 Instalación
-
-1. Clona el repositorio:
+1. Clone the repository
 
    ```bash
-   git clone https://github.com/tu-usuario/proyecto-reconocimiento-facial.git
-   cd proyecto-reconocimiento-facial
+   git clone https://github.com/bbBerny/facial-recognition.git
+   cd facial-recognition
    ```
-2. Crea y activa un entorno virtual:
+2. Create and activate a virtual environment
 
    ```bash
    python3 -m venv venv
    source venv/bin/activate
    ```
-3. Instala dependencias:
+3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
-4. Aplica migraciones:
+4. Apply migrations:
 
    ```bash
    python manage.py migrate
    ```
-5. Ejecuta el servidor:
+5. Run the server:
 
    ```bash
    python manage.py runserver
    ```
 
-## ⚙️ Uso
+## Use
 
-* Abre tu navegador en `http://localhost:8000/`.
-* Si no tienes cuenta, haz clic en **Registrarse**.
-* Una vez autenticado, verás el contenido del README renderizado.
+* Open on your browser `http://localhost:8000/`.
+* If you do not have an account click on **Register**.
+* Once authenticated you will be able to use the app.
 
-## 📂 Estructura de carpetas
 
-```plain
-proyecto-reconocimiento-facial/
-├── core/
-│   ├── views.py
-│   └── urls.py
-├── templates/
-│   └── home.html
-├── static/
-│   └── css/
-│       └── style.css
-├── README.md
-└── manage.py
-```
+## 🛠 Technologies
 
-## 🛠 Tecnologías
-
-* Python 3.x
-* Django
+* Python 3.13.3
+* Django 5.2.1
 * markdown2
 * HTML5 & CSS3
-
-## 📄 Licencia
-
-Proyecto bajo licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+* OpenCV
+* Numpy
